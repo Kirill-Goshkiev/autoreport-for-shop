@@ -28,7 +28,7 @@ for k, v in d.items():
 
 for i in SHOPS:
   for j in CASH:
-    c = {
+    tab = {
         'shop_number': i,
         'cash_number': j,
         'doc_id': [''.join(random.choices(string.ascii_letters + string.digits,k=10)) for _ in range(len(category))],
@@ -38,5 +38,5 @@ for i in SHOPS:
         'price': [round(random.uniform(100, 3000), 1) for _ in range(len(category))],
         'discount': [random.choice([0, 3, 5]) for _ in range(len(category))]
     }
-    report = pd.DataFrame(c)
-    report.to_csv(f'{i}_{j}.csv', index=False)
+    report = pd.DataFrame(tab)
+    report.to_csv(os.path.join(dirname, f'{i}_{j}.csv'), index=False)
