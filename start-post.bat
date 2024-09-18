@@ -1,0 +1,1 @@
+C:\Users\zenit\Documents\autoreport-for-shop\venv\Scripts\python.exe C:\Users\zenit\Documents\autoreport-for-shop\post.py
